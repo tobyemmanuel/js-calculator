@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carshio Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <div class="calculator-main-body">
+        <div class="calculator-output">
+            <div id="upper-value" class="upper-value"></div>
+            <div id="lower-value" class="lower-value">0</div>
+        </div>
+            <button onClick="doAction('allClear')" class="all-clear">AC</button>
+            <button onClick="doAction('del')">DEL</button>
+            <button onClick="useOperator('modulus')">%</button>
+            <button onClick="useOperator('divide')">/</button>
+            <button onClick="appendNumber(1)">1</button>
+            <button onClick="appendNumber(2)">2</button>
+            <button onClick="appendNumber(3)">3</button>
+            <button onClick="useOperator('multiple')">*</button>
+            <button onClick="appendNumber(4)">4</button>
+            <button onClick="appendNumber(5)">5</button>
+            <button onClick="appendNumber(6)">6</button>
+            <button onClick="useOperator('subtract')">-</button>
+            <button onClick="appendNumber(7)">7</button>
+            <button onClick="appendNumber(8)">8</button>
+            <button onClick="appendNumber(9)">9</button>
+            <button onClick="useOperator('add')">+</button>
+            <button onClick="appendNumber('.')">.</button>
+            <button onClick="appendNumber('0')">0</button>
+            <button onClick="doAction('process')" class="process-val double-span">=</button>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

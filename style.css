@@ -1,0 +1,75 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background: rgb(191, 213, 235);
+}
+
+.calculator-main-body{
+    display: grid;
+    justify-content: center;
+    margin-top: 2rem;
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 5rem);
+}
+
+.double-span{
+    grid-column: span 2;
+}
+
+.calculator-output{
+    grid-column: 1 / -1;
+    background: rgb(56, 68, 82);
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+    word-break: break-all;
+    word-wrap: break-word;
+    padding: .75rem;
+}
+
+.upper-value{
+    color: rgb(182, 209, 224);
+    font-size: 1.5rem;
+}
+
+.lower-value{
+    color: rgb(182, 209, 224);
+    font-size: 2rem;
+}
+
+.calculator-main-body > button{
+    cursor: pointer;
+    font-size: 1.5rem;
+    outline: none;
+    border: 1px solid rgb(29, 55, 80);
+}
+
+.calculator-main-body > button{
+    background: rgb(193, 228, 245);
+}
+
+.calculator-main-body > button:hover,
+.calculator-main-body > button:focus{
+    background: rgb(118, 177, 211);
+}
+
+.calculator-main-body > button.all-clear{
+    background: rgb(245, 157, 157);
+}
+
+.calculator-main-body > button.all-clear:hover,
+.calculator-main-body > button.all-clear:focus{
+    background: rgb(248, 130, 130);
+}
+
+.calculator-main-body > button.process-val{
+    background: rgb(157, 245, 186);
+}
+
+.calculator-main-body > button.process-val:hover,
+.calculator-main-body > button.process-val:focus{
+    background: rgb(103, 248, 151);
+}
